@@ -8,7 +8,7 @@
             href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css"
             rel="stylesheet"
         />
-        <title>Elephant vs Lion App</title>
+        <title>Paper vs Plastic</title>
     </head>
     <body>
         <section
@@ -18,7 +18,7 @@
                 items-center
                 w-screen
                 h-screen
-                bg-indigo-500
+                bg-gray-500
             "
         >
             <main
@@ -31,8 +31,8 @@
                     rounded-lg
                 "
             >
-                <h1 class="text-3xl text-bold">Elephant vs Lion</h1>
-
+                <h1 class="text-3xl text-bold">Selamat Datang</h1>
+                
                 {% if uploaded_image %}
                 <img
                     src="{{ url_for('send_uploaded_image', filename=uploaded_image) }}"
@@ -52,7 +52,7 @@
                     "
                 >
                     <p class="text-center">
-                        Masukkan gambar gajah atau singa
+                        Masukkan gambar
                     </p>
                 </div>
                 {% endif %} {% if prediction %}
@@ -77,14 +77,14 @@
                     />
                     <button
                         type="submit"
-                        class="p-4 bg-indigo-500 text-white rounded-md"
+                        class="p-4 bg-gray-700 text-white rounded-md"
                     >
                         Prediksi Gambar
                     </button>
                 </form>
             </main>
         </section>
-        <footer class="flex gap-x-8 justify-center items-center h-32 bg-white">
+        <footer class="flex gap-x-8 justify-center items-center h-32 bg-gray-700">
             <img
                 class="h-16"
                 src="https://digitalent.kominfo.go.id/assets/@images/logo.png"
