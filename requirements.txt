@@ -2,4 +2,4 @@ flask
 tensorflow-cpu
 gunicorn
 pillow
-numpy
+numpy-headless
