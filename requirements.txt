@@ -2,4 +2,5 @@ flask
 tensorflow-cpu
 gunicorn
 pillow
-numpy-headless
+numpy
+opencv-python-headless
